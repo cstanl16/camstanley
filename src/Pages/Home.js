@@ -13,7 +13,7 @@ function Home() {
 
             <div className="section1">
                 <p>Hello, my name is </p> 
-                <h1 className="t4">Cameron Stanley</h1>
+                <h1>Cameron Stanley</h1>
 
                 <p>I'm a software engineer graduating from UNCC in May of 2022. Currently looking for my first job in the field, I am excited to join a team where I can learn and work on interesting projects.</p>
             </div>  

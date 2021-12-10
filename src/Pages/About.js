@@ -5,7 +5,7 @@ function About() {
         <div className="aboutPage">
             <div className="aboutSection1">
                 <h1>Visit My Other Sites!</h1>
-                <p>See how far i have come by visiting some of my old websites.</p>
+                <p>See how far I have come by visiting some of my old websites.</p>
 
                 <iframe className="iframe" title="Fido Feeder" src="https://fido-host-qqizf.ondigitalocean.app/tab3" />
                 <iframe className="iframe"  title="Deep Dive" src="https://www.deepdive.camstanley.com" onClick={() => window.location.href = "www.facebook.com"}/>
