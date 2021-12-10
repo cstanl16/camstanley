@@ -1,5 +1,6 @@
 import '../App.css'
 import React from 'react';
+import logo3 from '../Images/logo3.png';
 
 import {
     Link
@@ -9,10 +10,21 @@ import {
 function NavBar() {
     return (
         <nav className="menu">
-            <ul>
-                <li><Link className="navLink" to="/">Homepage</Link></li>
-                <li><Link className="navLink" to="/about">About</Link></li>
-            </ul>
+
+            <img className="menuImg" alt="" src={logo3}/>
+
+                <Link className="navLink1" to="/">Homepage</Link>
+
+                <Link className="navLink2" to="/about">About</Link>
+
+                <Link className="navLink3" to="/resume">Resume</Link>
+
+            <div className="menu-toggle" id="mobile-menu">
+                <span class="bar"/>
+                <span class="bar"/>
+                <span class="bar"/>
+            </div>
+
         </nav>
     );
 }

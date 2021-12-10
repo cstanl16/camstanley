@@ -2,19 +2,23 @@ import React from 'react';
 
 function About() {
     return (
-        <div>
-            <div className="body">
-                <div>
-                    <h1>Visit My Other Sites!</h1>
-                    <p>See how far i have come by visiting some of my old websites.</p>
-                </div>
+        <div className="aboutPage">
+            <div className="aboutSection1">
+                <h1>Visit My Other Sites!</h1>
+                <p>See how far i have come by visiting some of my old websites.</p>
 
-            <button className="iconButton" onClick={() => window.location.href = 'https://twitter.com/camstan1995'}>
-                <iframe className="iframe" src="https://fido-host-qqizf.ondigitalocean.app/tab3" />
-            </button>
-            
-            <iframe className="iframe" src="https://deep-dive-music-c5gdi.ondigitalocean.app/" />
+                <iframe className="iframe" title="Fido Feeder" src="https://fido-host-qqizf.ondigitalocean.app/tab3" />
+                <iframe className="iframe"  title="Deep Dive" src="https://www.deepdive.camstanley.com" onClick={() => window.location.href = "www.facebook.com"}/>
             </div>
+
+            <div className="aboutSection2">
+                
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#66FCF1" fill-opacity="1" d="M0,32L720,192L1440,0L1440,0L720,0L0,0Z"></path>
+            </svg>
+            </div>
+            
+
         </div>
     );
 }
