@@ -50,7 +50,7 @@ function Footer() {
                 <hr className="footerLine"></hr>
                 <a href="https://www.fidofeeder.camstanley.com" target="_blank" rel="noopener noreferrer"><p className='clickableFooter'>Fido Feeder</p></a>
                 <a href="https://www.deepDive.camstanley.com" target="_blank" rel="noopener noreferrer"><p className='clickableFooter'>Deep Dive Music</p></a>
-                <a href="https://www.fidofeeder.camstanley.com" target="_blank" rel="noopener noreferrer"><p className='clickableFooter'>Fido Feeder</p></a>
+                <a href="https://www.college2career.camstanley.com" target="_blank" rel="noopener noreferrer"><p className='clickableFooter'>College to Career</p></a>
                 <a href="https://www.deepDive.camstanley.com" target="_blank" rel="noopener noreferrer"><p className='clickableFooter'>Deep Dive Music</p></a>
 
             </div>

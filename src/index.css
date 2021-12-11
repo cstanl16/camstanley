@@ -38,108 +38,223 @@ code {
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
-.menu {
-	margin: 0px;
-	overflow-x: hidden;
-	background: #66FCF1;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-	font-size: 24px;
-	width: 100%;
-	position: fixed;
-}
 
-.menuImg {
-	width: 80px;
-	height: 80px;
-	float: left;
-}
+	.menu {
+		margin: 0px;
+		overflow-x: hidden;
+		background: #66FCF1;
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 400;
+		font-size: 24px;
+		width: 100%;
+		position: fixed;
+	}
 
-.navLink1 {
-	padding: 20px;
-	list-style: none;
-	text-decoration: none;
-	text-align: center;
-	position: absolute;
-	right: 340px;
-	color: #1F2833;
-}
+	.menuImg {
+		width: 80px;
+		height: 80px;
+		float: left;
+	}
 
-.navLink1:hover {
-	color: #f157ea;
-}
 
-.navLink1::before {
-  content: '';
-  display: block;
-  height: 3px;
-  background-color: #444;
-  position: absolute;
-  top: 50px;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
 
-.navLink1:hover::before {
-  width: 100%;
-}
+	.navLink {
+		text-decoration: none;
+		color: #1F2833;
+		float: right;
+		margin-top: 20px;
+		padding: 0;
+		width: 160px;
+		text-align: left;
+	}
 
-.navLink2 {
-	padding: 20px;
-	list-style: none;
-	text-decoration: none;
-	text-align: center;
-	position: absolute;
-	right: 200px;
-	color: #1F2833;
-}
+	.navLinkActive {
+		text-decoration: none;
+		color: #1F2833;
+		float: right;
+		padding: 0;
+		width: 160px;
+		margin-top: 20px;
+		text-align:left;
+	}
 
-.navLink2:hover {
-	color: #f157ea;
-}
+	.navLink::before {
+		content: '';
+		display: block;
+		height: 3px;
+		background-color: #444;
+		position: absolute;
+		top: 50px;
+		width: 0%;
+		transition: all ease-in-out 250ms;
+	}
 
-.navLink2::before {
-  content: '';
-  display: block;
-  height: 3px;
-  background-color: #444;
-  position: absolute;
-  top: 50px;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
+	.navLink:hover::before {
+		width: 120px;
+	}
 
-.navLink2:hover::before {
-  width: 100%;
-}
+	.navLink::before {
+		content: '';
+		display: block;
+		height: 3px;
+		background-color: #444;
+		position: absolute;
+		top: 50px;
+		width: 0%;
+		transition: all ease-in-out 250ms;
+	}
 
-.navLink3 {
-	padding: 20px;
-	list-style: none;
-	text-decoration: none;
-	position: absolute;
-	right: 40px;
-	color: #1F2833;
-}
+	.navLinkActive::before {
+		content: '';
+		display: block;
+		height: 3px;
+		background-color: #444;
+		position: absolute;
+		top: 50px;
+		width: 120px;
+		transition: all ease-in-out 250ms;
+	}
 
-.navLink3:hover {
-	color: #f157ea;
-}
 
-.navLink3::before {
-  content: '';
-  display: block;
-  height: 3px;
-  background-color: #444;
-  position: absolute;
-  top: 50px;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
+	.menuToggleOff {
+		display: none;
+	}
 
-.navLink3:hover::before {
-  width: 100%;
-}
+
+
+
+/* ---------------------------------------------Phone Nav Bar------------------------------------------------------------ */
+
+@media only screen and (max-width: 600px) {
+	.menu {
+		margin: 0px;
+		overflow-x: hidden;
+		background: #66FCF1;
+		font-family: 'Work Sans', sans-serif;
+		font-weight: 400;
+		font-size: 24px;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+	}
+
+
+	.menuToggleOff {
+		display: block;
+		float: right;
+		position: absolute;
+		margin: 0;
+		top: 20px;
+		right: 20px;
+		height: 20%;
+		width: 40px;
+	}
+
+	.menuToggleOff .bar1 {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #444;
+		border-width: 0;
+		margin: 5px;
+	}
+	.menuToggleOff .bar2 {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #444;
+		border-width: 0;
+		margin: 5px;
+	}
+	.menuToggleOff .bar3 {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #444;
+		border-width: 0;
+		margin: 5px;
+	}
+
+	.menuToggleOn {
+		display: block;
+		float: right;
+		position: absolute;
+		margin: 0;
+		top: 20px;
+		right: 20px;
+		height: 50%;
+		width: 40px;
+	}
+
+	.menuToggleOn .bar1 {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #444;
+		border-width: 0;
+		margin: 5px;
+		transition: .6s;
+		transform: translateX(5px) translateY(5px)  rotate(45deg) ;
+		
+	}
+	.menuToggleOn .bar2 {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #444;
+		border-width: 0;
+		margin: 5px;
+		transition: 1s;
+		transform: translateX(100px);
+		
+	}
+	.menuToggleOn .bar3 {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background-color: #444;
+		border-width: 0;
+		margin: 5px;
+		transition: .6s;
+		transform: translateX(5px) translateY(-10px) rotate(-45deg) ;
+	}
+
+	.mobileNavContainer {
+		width: 40%;
+		float: right;
+		text-align: right;
+		height: 170px;
+		background-color: #1F2833;
+		padding-top: 40px;
+		transition: 1s;
+	}
+
+	.mobileNavContainer .navLink {
+		color: #444;
+		display: block;
+		width: 80%;
+		text-align: left;
+	}
+	.mobileNavContainer .navLinkActive {
+		display: block;
+		color: #66FCF1;
+		width: 80%;
+		text-align: left;
+
+	}
+
+	.mobileNavContainerHidden {
+		transition: .5s;
+	}
+	.mobileNavContainerHidden .navLink {
+		display: none;
+	}
+	.mobileNavContainerHidden .navLinkActive {
+		display: none;
+	}
+
+
+  }
 
 /* --------------------------------------------Home Page----------------------------------------------------------- */
 
@@ -243,7 +358,7 @@ code {
 
 .footerContainer p {
 	text-decoration: none;
-	color: white;
+	color: #444;
 	display: block;
 	font-size: 14px;
 	line-height: 20px;

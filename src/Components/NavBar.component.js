@@ -1,5 +1,7 @@
 import '../App.css'
 import React from 'react';
+import { Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import logo3 from '../Images/logo3.png';
 
 import {
@@ -8,25 +10,57 @@ import {
 
 
 function NavBar() {
+
     return (
-        <nav className="menu">
+        <Nav className="menu">
 
-            <img className="menuImg" alt="" src={logo3}/>
+            <img className="menuImg" alt="Cameron Stanley Software Engineer" src={logo3}/>
+            
+            <div id="mobileNavContainer" className="mobileNavContainerHidden">
 
-                <Link className="navLink1" to="/">Homepage</Link>
+                <NavLink className={
+                    (navData) => navData.isActive ? "navLinkActive" : "navLink" } 
+                    to="/resume" >
+                        Resume
+                </NavLink>
 
-                <Link className="navLink2" to="/about">About</Link>
+                <NavLink className={
+                    (navData) => navData.isActive ? "navLinkActive" : "navLink" } 
+                    to="/about">
+                    About
+                </NavLink>
 
-                <Link className="navLink3" to="/resume">Resume</Link>
+                <NavLink className={
+                    (navData) => navData.isActive ? "navLinkActive" : "navLink" } 
+                    to="/" >
+                        Home
+                </NavLink>
 
-            <div className="menu-toggle" id="mobile-menu">
-                <span class="bar"/>
-                <span class="bar"/>
-                <span class="bar"/>
+            </div>
+                
+
+            <div className="menuToggleOff" id="mobileMenu" onClick={toggleHamburger}>
+                <hr class="bar1"/>
+                <hr class="bar2"/>
+                <hr class="bar3"/>
             </div>
 
-        </nav>
+        </Nav>
     );
+}
+
+function toggleHamburger() {
+    var a = document.getElementById("mobileNavContainer");
+    var b = document.getElementById("mobileMenu");
+    if (a.classList.contains("mobileNavContainerHidden") ) {
+        a.setAttribute("class", "mobileNavContainer")
+        b.setAttribute("class", "menuToggleOn")
+    }
+    else {
+        a.setAttribute("class", "mobileNavContainerHidden")
+        b.setAttribute("class", "menuToggleOff")
+    }
+    
 }
 
 export default NavBar;

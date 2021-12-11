@@ -15,7 +15,11 @@ function Home() {
                 <p>Hello, my name is </p> 
                 <h1>Cameron Stanley</h1>
 
-                <p>I'm a software engineer graduating from UNCC in May of 2022. Currently looking for my first job in the field, I am excited to join a team where I can learn and work on interesting projects.</p>
+                <p>
+                    I'm a software engineer graduating from UNCC in May of 2022. Currently 
+                    looking for my first job in the field, I am excited to join a team where 
+                    I can learn and work on interesting projects.
+                </p>
             </div>  
 
             <div class="waves">
@@ -30,19 +34,28 @@ function Home() {
                 <div className="language">
                     <img className="iconsHome" src={java} alt="" />
                     <h1>Java</h1>
-                    <p>I first started learning java in 2014 to make minecraft plugins and that sparked my interest in software development</p>
+                    <p>
+                        I first started learning java in 2014 to make minecraft plugins and 
+                        that sparked my interest in software development\
+                    </p>
                 </div>
 
                 <div className="language">
                     <img className="iconsHome" src={javascript} alt="" />
                     <h1>Javascript</h1>
-                    <p>Though only learning javscript very recently, i have spent a lot of time learning it through using react. </p>
+                    <p>
+                        Though only learning javscript very recently, I have spent a lot of 
+                        time learning it through using react. 
+                    </p>
                 </div>
 
                 <div className="language">
                     <img className="iconsHome" src={react} alt="" />
                     <h1>React</h1>
-                    <p>After learning about react, i spent a lot of time in makign different website from it.</p>
+                    <p>
+                        After learning about react, I spent a lot of time in 
+                        making different website from it.
+                    </p>
                 </div>
 
             </div>

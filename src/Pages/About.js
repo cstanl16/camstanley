@@ -8,7 +8,8 @@ function About() {
                 <p>See how far I have come by visiting some of my old websites.</p>
 
                 <iframe className="iframe" title="Fido Feeder" src="https://fido-host-qqizf.ondigitalocean.app/tab3" />
-                <iframe className="iframe"  title="Deep Dive" src="https://www.deepdive.camstanley.com" onClick={() => window.location.href = "www.facebook.com"}/>
+                <iframe className="iframe"  title="Deep Dive" src="https://www.deepdive.camstanley.com"/>
+                <iframe className="iframe"  title="College to Career" src="https://www.college2career.camstanley.com"/>
             </div>
 
             <div className="aboutSection2">
