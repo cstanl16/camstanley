@@ -399,6 +399,14 @@ code {
 	margin-right: 2%;
 }
 
+@media only screen and (max-width: 810px ) {
+	.footerContainer {
+		width: 80%;
+		margin: 0 10%;
+		margin-bottom: 5%;
+	}
+}
+
 /* ---------------------------------------------About Page------------------------------------------------------------ */
 
 .aboutPage {
