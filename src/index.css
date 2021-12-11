@@ -276,10 +276,11 @@ code {
 }
 
 .section1 h1 {
-	font-size: 110px;
-	margin: 0px 20%;
+	font-size: 10vw;
+	margin: 0 20%;
 	text-align: left;
-	width: 80%;
+	-right: 20%;
+	width: 70%;
 	color: #1F2833;
 }
 
@@ -294,6 +295,8 @@ code {
 	text-align: left;
 }
 
+
+
 .section2 {
 	width:100%;
 }
@@ -302,6 +305,7 @@ code {
 	display: inline-block;
 	width: 20%;
 	margin: 0% 5%;
+	height: 100%;
 }
 
 .iconsHome {
@@ -313,6 +317,27 @@ code {
 .section3 {
 	width:100%;
 	height: 200px;
+}
+
+@media only screen and (max-width: 600px ) {
+	.section1 p {
+		margin: 0px;
+		margin-left: 20%;
+		margin-right: 5%;
+		width: 70%;
+		color: #0b0c10;
+		opacity: 90%;
+		font-weight: 100;
+		font-size: 24px;
+		text-align: left;
+	}
+
+	.language {
+			display: block;
+			width: 70%;
+			margin: 0% 15%;
+			height: 100%;
+	}
 }
 
 

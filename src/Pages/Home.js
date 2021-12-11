@@ -36,7 +36,7 @@ function Home() {
                     <h1>Java</h1>
                     <p>
                         I first started learning java in 2014 to make minecraft plugins and 
-                        that sparked my interest in software development\
+                        that sparked my interest in software development.
                     </p>
                 </div>
 
