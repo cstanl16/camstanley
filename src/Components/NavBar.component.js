@@ -4,18 +4,15 @@ import { Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo3 from '../Images/logo3.png';
 
-import {
-    Link
-  } from "react-router-dom";
 
 
 function NavBar() {
 
     return (
         <Nav className="menu">
-
-            <img className="menuImg" alt="Cameron Stanley Software Engineer" src={logo3}/>
-            
+            <a href="https://www.camstanley.com">
+                <img className="menuImg" alt="Cameron Stanley Software Engineer" src={logo3}/>
+            </a>
             <div id="mobileNavContainer" className="mobileNavContainerHidden">
 
                 <NavLink className={
@@ -32,7 +29,7 @@ function NavBar() {
 
                 <NavLink className={
                     (navData) => navData.isActive ? "navLinkActive" : "navLink" } 
-                    to="/" >
+                    to="/"  >
                         Home
                 </NavLink>
 

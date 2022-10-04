@@ -14,6 +14,13 @@ code {
 
 /* ----------------------------------------------Colors------------------------------------------------------------ */
 
+
+/* Night Mode 
+
+
+
+*/
+
 .black {
 	background-color: #0b0c10
 }
@@ -34,10 +41,36 @@ code {
 	background-color: #f157ea;
 }
 
+/* --------------------------------------------Scroll Bar---------------------------------------------------------- */
+
+html {
+	overflow-y:scroll;
+	height: 100vh;
+}
+
+html::-webkit-scrollbar {
+	width: .7vw;	
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: red;
+	border-radius: 100vh;
+	margin-block: .2em;
+	border: .2em solid green;
+}
+html::-webkit-scrollbar-track {
+	background-color: green;
+	border-radius: 100vh;
+	margin-block: .2em;
+}
+html::-webkit-scrollbar-corner {
+	background-color: #0b0c10;
+}
 /* ---------------------------------------------Nav Bar------------------------------------------------------------ */
+
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-
 
 	.menu {
 		margin: 0px;
@@ -48,6 +81,7 @@ code {
 		font-size: 24px;
 		width: 100%;
 		position: fixed;
+		z-index: 5;
 	}
 
 	.menuImg {
@@ -56,9 +90,17 @@ code {
 		float: left;
 	}
 
-
-
 	.navLink {
+		text-decoration: none;
+		color: #1F2833;
+		float: right;
+		margin-top: 20px;
+		padding: 0;
+		width: 160px;
+		text-align: left;
+	}
+
+	.navLinkDark {
 		text-decoration: none;
 		color: #1F2833;
 		float: right;
@@ -121,15 +163,14 @@ code {
 	}
 
 
-
-
 /* ---------------------------------------------Phone Nav Bar------------------------------------------------------------ */
+
 
 @media only screen and (max-width: 600px) {
 	.menu {
 		margin: 0px;
 		overflow-x: hidden;
-		background: #66FCF1;
+		background: hsl(190, 72%, 73%);
 		font-family: 'Work Sans', sans-serif;
 		font-weight: 400;
 		font-size: 24px;
@@ -256,7 +297,9 @@ code {
 
   }
 
+
 /* --------------------------------------------Home Page----------------------------------------------------------- */
+
 
 .homePage {
 	overflow-x: hidden;
@@ -265,12 +308,29 @@ code {
 	padding-top: 80px;
 }
 
+.homePageDark {
+	overflow-x: hidden;
+	background-color: #66FCF1;
+	color: black;
+	padding-top: 80px;
+}
+
 .logoDiv {
-	background-color: #66FCF1
+	background-image:linear-gradient(#66FCF1, hsl(24, 75%, 68%));
+}
+
+.logoDivDark {
+	background-color: #0b0c10;
 }
 
 .section1 {
-	background-color: #66FCF1;
+	background-color:  hsl(24, 75%, 68%);
+	height: 100%;
+	width: 100%;
+}
+
+.section1Dark {
+	background-color: #0b0c10;
 	height: 100%;
 	width: 100%;
 }
@@ -279,9 +339,19 @@ code {
 	font-size: 10vw;
 	margin: 0 20%;
 	text-align: left;
-	-right: 20%;
+	right: 20%;
 	width: 70%;
-	color: #1F2833;
+	color: hsl(180, 80%, 70%);
+}
+
+.section1Dark h1 {
+	font-size: 10vw;
+	margin: 0 20%;
+	text-align: left;
+	right: 20%;
+	width: 70%;
+	color: #C5C6C7;
+
 }
 
 .section1 p {
@@ -295,13 +365,33 @@ code {
 	text-align: left;
 }
 
-
+.section1Dark p {
+	margin: 0;
+	margin-left: 20%;
+	width: 40%;
+	color: #C5C6C7;
+	opacity: 90%;
+	font-weight: 100;
+	font-size: 24px;
+	text-align: left;
+}
 
 .section2 {
 	width:100%;
 }
 
+.section2Dark {
+	width:100%;
+}
+
 .language {
+	display: inline-block;
+	width: 20%;
+	margin: 0% 5%;
+	height: 100%;
+}
+
+.languageDark {
 	display: inline-block;
 	width: 20%;
 	margin: 0% 5%;
@@ -314,9 +404,30 @@ code {
 	filter: invert(89%) sepia(88%) saturate(417%) hue-rotate(92deg) brightness(102%) contrast(98%);
 }
 
+.iconsHomeDark {
+	width: 60px;
+	height: 60px;
+}
+
 .section3 {
 	width:100%;
 	height: 200px;
+}
+
+.section3Dark {
+	width:100%;
+	height: 200px;
+	background: #0b0c10;
+}
+
+.waves {
+	fill: hsl(24, 75%, 68%);
+	fill-opacity: 1;
+}
+
+.wavesDark {
+	fill: #0b0c10;
+	fill-opacity: 1;
 }
 
 @media only screen and (max-width: 600px ) {
@@ -340,6 +451,159 @@ code {
 	}
 }
 
+
+/* ---------------------------------------------About Page------------------------------------------------------------ */
+
+
+.aboutPage {
+	overflow-x: hidden;
+	font-family: 'Work Sans', sans-serif;
+	
+}
+
+.aboutSection1 {
+	background: hsl(24, 75%, 68%);
+	padding-top: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.aboutSection1 h1 {
+	font-size: 80px;
+	width: 100%;
+	font-weight: 400;
+}
+
+.aboutSection1 p {
+	margin: 0;
+	width: 100%;
+	color: #0b0c10;
+	opacity: 90%;
+	font-weight: 100;
+	font-size: 24px;
+}
+
+.blackBox {
+	width: 420px;
+	height: 30%;
+	background: hsl(180, 80%, 70%);
+	position: absolute;
+	bottom: 30%;
+	left: 65%;
+	color: black;
+	font-size: 1.8rem;
+	border-radius: 20px;
+	text-align: center;
+
+}
+
+.blackBox h3 {
+	width: 90%;
+	margin:5%;
+	color: black;
+	font-size: 1.8rem;
+	border-radius: 20px;
+
+}
+
+.blackBox p {
+	width: 90%;
+	margin: 5%;
+	color: black;
+}
+
+.aboutSection2 {
+	background-color: #0b0c10;
+	margin: 0px;
+	width: 100%;
+}
+
+.test {
+	position: relative;
+	height: 1000px;
+}
+
+.iframe {
+	position: absolute;
+	width: 60%;
+	height: 60%;
+	border-width: 0px;
+	border-radius: 50px;
+	margin: 20px 20%;
+	left: 0%;
+}
+
+
+/* --------------------------------------------Resume Page----------------------------------------------------------- */
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+.resumePage {
+	overflow-x: hidden;
+	color: black;
+	padding-top: 80px;
+	background: hsl(24, 75%, 68%);	
+}
+
+.resumeList {
+	position: fixed;
+	display: inline-block;
+	margin:0;
+	width: 50%;
+	height: 100%;
+	top: 30%;
+	font-size: 1.8em;
+	line-height: 50px;
+	left: 0%;
+}
+
+.line {
+	position: fixed;
+	display: inline-block;
+	text-align: right;
+	top: 30%;
+	font-size: 1.5em;
+	line-height: 35px;
+	left: 32%;
+	height: 40%;
+	background: white;
+	width: 3px;
+}
+
+li {
+	list-style: none;	
+	text-anchor: none;
+}
+
+.resumePage a, a:focus, a:active {
+	text-decoration: none;
+	color: black;	
+
+}
+
+.resumeBubble {
+	display: block;
+	padding-top:15%;
+	padding-left: 40%;
+	width: 50%;
+	text-align: center;
+	align-items: center;
+	height: 600px;
+	padding-right:10%;
+}
+
+@media only screen and (max-width: 600px ) {
+	.resumeList {
+		display:none;
+	}
+
+	.line {
+			display: hidden;
+	}
+}
 
 /* ---------------------------------------------Footer------------------------------------------------------------ */
 
@@ -406,48 +670,3 @@ code {
 		margin-bottom: 5%;
 	}
 }
-
-/* ---------------------------------------------About Page------------------------------------------------------------ */
-
-.aboutPage {
-	overflow-x: hidden;
-	font-family: 'Work Sans', sans-serif;
-}
-
-.aboutSection1 {
-	background-color: #66FCF1;
-	padding-top: 30px;
-	width: 100%;
-	text-align: center;
-}
-
-.aboutSection1 h1 {
-	font-size: 80px;
-	width: 100%;
-	font-weight: 400;
-}
-
-.aboutSection1 p {
-	margin: 0;
-	width: 100%;
-	color: #0b0c10;
-	opacity: 90%;
-	font-weight: 100;
-	font-size: 24px;
-}
-
-.aboutSection2 {
-	background-color: #0b0c10;
-	margin: 0px;
-}
-
-
-.iframe {
-	width: 200px;
-	height: 200px;
-	border-width: 0px;
-	border-radius: 50px;
-	margin: 20px;
-}
-
-
