@@ -76,13 +76,15 @@ function ResumePage() {
                     <div className="resumeBubble" >
                             <h1>Skills</h1>
                             <p>
-                                Communication
-                                Leadership
-                                Organization
-                                Inventory
-                                Teamwork
-                                Problem Solving
-                                Customer Service
+                                <ul className="skillList">
+                                    <li>Communication</li>
+                                    <li>Leadership</li>
+                                    <li>Organization</li> 
+                                    <li>Inventory</li>
+                                    <li>Teamwork</li>
+                                    <li>Problem Solving</li>
+                                    <li>Customer Service</li>
+                                </ul>
                             </p>
                     </div>
 
@@ -90,14 +92,16 @@ function ResumePage() {
                     <div className="resumeBubble" >
                             <h1>Languages</h1>
                             <p>
-                                React
-                                Java
-                                JavaScript
-                                Auth0
-                                HTML5
-                                CSS3
-                                MySQL
-                                MongoDB
+                                <ul className="skillList">
+                                    <li>React</li>
+                                    <li>Java</li>
+                                    <li>JavaScript</li> 
+                                    <li>Auth0</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
                             </p>
                     </div>
 
@@ -108,13 +112,13 @@ function ResumePage() {
                                 Bonner Stiller — BHI
                                 Limited:
                                 Transportation Manager
-                                OMITTED
+                                
                             </p>
                             <p>
                                 Jackson Maultsby —
                                 Maultsby Construction:
                                 Project Manager
-                                OMITTED
+                               
                             </p>
                     </div>   
         </div>

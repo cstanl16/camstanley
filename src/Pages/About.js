@@ -1,4 +1,8 @@
 import React from 'react';
+import personalbudget from '../Images/PersonalBudget.png'
+import college2career from '../Images/college2career.png'
+import deepdive from '../Images/deepdive.png'
+import fido from '../Images/Fido.png'
 
 function About() {
     return (
@@ -9,11 +13,26 @@ function About() {
                 
                 <div className="test">
 
-                    <iframe className="iframe" title="Fido Feeder" src="https://fido-host-qqizf.ondigitalocean.app/tab3" />
+                    <a href="https://www.personalbudget.camstanley.com"><img className="websiteImages" src={personalbudget} alt="Personal Budget Tracker"></img></a>
+                    <div className="blackBox" >
+                        <h3>Personal Budget Tracker</h3>
+                        <p>An easy to use website to create an account and keep track of your budget. With the 
+                            security of Auth0 and safe database access through mongoDB, this website shows the 
+                            capabilities of using the React framework.
+                        </p>
+
+                    </div>
+                    
+                </div>
+                
+                <div className="test">
+
+                    <a href="#"><img className="websiteImages" src={fido} alt="Fido Feeder"></img></a>
                     <div className="blackBox" >
                         <h3>Fido Feeder</h3>
                         <p>An IOS app designed for pet owners! Users can simply input foods into the search 
-                            bar and find info about whether or not their pup can eat them.
+                            bar and find info about whether or not their pup can eat them. User account and 
+                            profiles are functional through Auth0.
                         </p>
 
                     </div>
@@ -22,7 +41,7 @@ function About() {
 
                 <div className="test">
 
-                    <iframe className="iframe"  title="Deep Dive" src="https://www.deepdive.camstanley.com"/>
+                    <a href="#"><img className="websiteImages" src={deepdive} alt="Deep Dive"></img></a>
                     <div className="blackBox" >
                         <h3>Deep Dive Music</h3>
                         <p>A functional website developed to analyze trends in music. The back end software 
@@ -35,9 +54,13 @@ function About() {
 
                 <div className="test">
 
-                    <iframe className="iframe"  title="College to Career" src="https://www.college2career.camstanley.com"/>
+                    <a href="#"><img className="websiteImages" src={college2career} alt="College 2 Career"></img></a>
                     <div className="blackBox" >
-                    
+                        <h3>College 2 Career</h3>
+                        <p>A more basic website created using React. This was originally created as a first design 
+                            for an app to help students with finding jobs after college. With some tweaking and 
+                            what I have learned, this website could be very useful. 
+                        </p>
                     </div>
                     
                 </div>
